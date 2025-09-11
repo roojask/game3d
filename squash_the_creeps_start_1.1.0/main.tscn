@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://dl85n0kx8ec0e"]
+[gd_scene load_steps=12 format=3 uid="uid://dl85n0kx8ec0e"]
 
 [ext_resource type="Script" uid="uid://d2v1ajyhy3ufk" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bd1akdxmb7s71" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://ynhyosxbom5o" path="res://Mob.tscn" id="2_1bvp3"]
+[ext_resource type="FontFile" uid="uid://ntohkdowugey" path="res://fonts/Montserrat-Medium.ttf" id="4_lquwl"]
+[ext_resource type="Script" uid="uid://bi8yib2a8vwbc" path="res://ScoreLabel.gd" id="5_7mycd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
 size = Vector3(60, 2, 60)
@@ -24,6 +26,10 @@ _data = {
 }
 point_count = 4
 
+[sub_resource type="Theme" id="Theme_272bh"]
+default_font = ExtResource("4_lquwl")
+default_font_size = 22
+
 [node name="main" type="Node"]
 script = ExtResource("1_h2yge")
 mob_scene = ExtResource("2_1bvp3")
@@ -42,10 +48,6 @@ mesh = SubResource("BoxMesh_ig7tw")
 transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 10.1136, 34.2129, 11.4199)
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
-speed = 14
-fall_acceleration = 75
-jump_impulse = 20
-bounce_impulse = 16
 
 [node name="Marker3D" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.99124)
@@ -84,6 +86,52 @@ transform = Transform3D(0.00298801, -8.07823e-05, 0.999941, 3.63778e-12, 0.99995
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_272bh")
+
+[node name="ScoreLabel" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 25.0
+offset_right = 87.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.839216, 0.0196078, 0, 1)
+text = "Score: 0"
+script = ExtResource("5_7mycd")
+
+[node name="Retry" type="ColorRect" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 248.0
+offset_top = 38.0
+offset_right = 403.0
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.99647, 0.4485, 0.656144, 1)
+
+[node name="Label" type="Label" parent="UserInterface/Retry"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.5
+offset_top = -15.0
+offset_right = 96.5
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "กด Enter เพื่อลองใหม่"
 
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

@@ -1,4 +1,7 @@
+AudioStreamPlayer
+AudioStreamPlayer3D
 Label
+ColorRect
 Control
 CollisionShape3D
 Area3D
@@ -10,6 +13,3 @@ Node3D
 VisibleOnScreenNotifier3D
 VisibleOnScreenEnabler3D
 CharacterBody3D
-Camera3D
-Marker3D
-AnimatedSprite3D

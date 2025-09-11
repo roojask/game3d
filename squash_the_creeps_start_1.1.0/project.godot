@@ -15,6 +15,10 @@ run/main_scene="uid://dl85n0kx8ec0e"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
 
+[autoload]
+
+MusicPlayer="*res://music_player.tscn"
+
 [display]
 
 window/size/viewport_width=720
