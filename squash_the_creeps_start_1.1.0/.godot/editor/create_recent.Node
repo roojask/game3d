@@ -1,5 +1,11 @@
+Camera3D
+Marker3D
+CollisionShape3D
+Node3D
+CharacterBody3D
+AnimatedSprite3D
+OccluderInstance3D
 DirectionalLight3D
 MeshInstance3D
-CollisionShape3D
 StaticBody3D
 Node
