@@ -1,17 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757864832
+::res://::1757867970
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::-1::1757579877::0::1::::<><><>0<>0<><>::
 default_env.tres::Environment/Environment::-1::1757579877::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1757867787::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::1901452313578774083::1757579803::1757579882::1::::<><><>0<>0<>8be4e2cd1685f27cbb6dcc8b83455010<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 main.gd::GDScript::9099291914090062020::1757610397::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::8001309851706461550::1757864832::0::1::::<><><>0<>0<><>::uid://d2v1ajyhy3ufk::::res://main.gd<>uid://bd1akdxmb7s71::::res://player.tscn<>uid://ynhyosxbom5o::::res://Mob.tscn<>uid://ntohkdowugey::::res://fonts/Montserrat-Medium.ttf<>uid://bi8yib2a8vwbc::::res://ScoreLabel.gd<>uid://d0nnwnlrhf0aa::::res://art/Big Tree.glb<>uid://1iipkvb6124a::::res://art/Floor Grass Sliced B.glb
+main.tscn::PackedScene::8001309851706461550::1757866974::0::1::::<><><>0<>0<><>::uid://d2v1ajyhy3ufk::::res://main.gd<>uid://bd1akdxmb7s71::::res://player.tscn<>uid://ynhyosxbom5o::::res://Mob.tscn<>uid://ntohkdowugey::::res://fonts/Montserrat-Medium.ttf<>uid://bi8yib2a8vwbc::::res://ScoreLabel.gd<>uid://d0nnwnlrhf0aa::::res://art/Big Tree.glb<>uid://1iipkvb6124a::::res://art/Floor Grass Sliced B.glb<>uid://dbmh31ioow2n1::::res://art/Pine.glb
 Mob.gd::GDScript::5964521524852542386::1757609276::0::1::::<>CharacterBody3D<><>0<>0<><>::
-Mob.tscn::PackedScene::1711837800298934810::1757864832::0::1::::<><><>0<>0<><>::uid://cq8i2euafc6ru::::res://Mob.gd<>uid://sh7yvu3igs4w::::res://art/mob.glb<>uid://elwgsd4cok61::::res://art/Dingus the cat.glb
-music_player.tscn::PackedScene::693001148620765161::1757864832::0::1::::<><><>0<>0<><>::uid://ctawsefo06qm2::::res://art/House In a Forest Loop.ogg
+Mob.tscn::PackedScene::1711837800298934810::1757866975::0::1::::<><><>0<>0<><>::uid://cq8i2euafc6ru::::res://Mob.gd<>uid://sh7yvu3igs4w::::res://art/mob.glb<>uid://elwgsd4cok61::::res://art/Dingus the cat.glb
+music_player.tscn::PackedScene::693001148620765161::1757866975::0::1::::<><><>0<>0<><>::uid://ctawsefo06qm2::::res://art/House In a Forest Loop.ogg
 Player.gd::GDScript::2483049080264015453::1757609276::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene::2650679087800194418::1757864832::0::1::::<><><>0<>0<><>::uid://bbm2pqv44ar4p::::res://Player.gd<>uid://db8207ona8pj8::::res://art/player.glb<>uid://d2hboun3hoat5::::res://art/Wizardus Maximus.glb
+player.tscn::PackedScene::2650679087800194418::1757866974::0::1::::<><><>0<>0<><>::uid://bbm2pqv44ar4p::::res://Player.gd<>uid://db8207ona8pj8::::res://art/player.glb<>uid://d2hboun3hoat5::::res://art/Wizardus Maximus.glb
 ScoreLabel.gd::GDScript::3017527487136986356::1757609353::0::1::::<>Label<><>0<>0<><>::
-::res://art/::1757865206
+::res://art/::1757865209
 Big Tree.glb::PackedScene::8941649361783144028::1757864629::1757864631::1::::<><><>0<>0<>66211b2794b38aaaa61c50b3654c9558<>res://.godot/imported/Big Tree.glb-61d88c6699a68a6ca3582c2da22bcd22.scn::
 body.material::StandardMaterial3D/StandardMaterial3D::-1::1757579803::0::1::::<><><>0<>0<><>::
 Dingus the cat.glb::PackedScene::304810969826657360::1757864629::1757862310::1::::<><><>0<>0<>c76bb8b53f178eb558b95deb079b0cef<>res://.godot/imported/Dingus the cat.glb-b3093f0fd00e88245069118c3bc4f83a.scn::uid://cti7m3lygyqxu::::res://art/Dingus the cat_Maxwell.jpg<>uid://dv65cxo2c3o5l::::res://art/Dingus the cat_whiskers.png
@@ -35,3 +36,16 @@ Wizardus Maximus.glb::PackedScene::9068898263523588420::1757862309::1757862310::
 ::res://fonts/::1757579882
 LICENSE.txt::TextFile/TextFile::-1::1757579803::0::1::::<><><>0<>0<><>::
 Montserrat-Medium.ttf::FontFile/FontFile::952541213611824696::1757579803::1757579882::1::::<><><>0<>0<>e61fc84034736639605cf9d4529b4447<>res://.godot/imported/Montserrat-Medium.ttf-e832861e4ad4110e172112dc430c04b0.fontdata::
+::res://index/::1757867971
+icon.png::CompressedTexture2D::1901452313578774083::1757867971::1757868056::1::::<><><>0<>0<>08eadecb2b077f35a697b298ce8b7228<>res://.godot/imported/icon.png-a831f86fc1edd8a4c904f4661a725145.ctex::
+main.gdc::GDScript::6635661988771340478::1757867971::0::1::::<>RefCounted<><>0<>0<><>::
+Mob.gdc::GDScript::5563936619393934351::1757867971::0::1::::<>RefCounted<><>0<>0<><>::
+Player.gdc::GDScript::176602716960870679::1757867971::0::1::::<>RefCounted<><>0<>0<><>::
+ScoreLabel.gdc::GDScript::8766699681605491686::1757867971::0::1::::<>RefCounted<><>0<>0<><>::
+::res://index/art/::1757867971
+body.material::StandardMaterial3D::-1::1757867971::0::1::::<><><>0<>0<><>::
+eye.material::StandardMaterial3D::-1::1757867971::0::1::::<><><>0<>0<><>::
+mob_body.material::StandardMaterial3D::-1::1757867971::0::1::::<><><>0<>0<><>::
+mob_eye.material::StandardMaterial3D::-1::1757867971::0::1::::<><><>0<>0<><>::
+pupil.material::StandardMaterial3D::-1::1757867971::0::1::::<><><>0<>0<><>::
+::res://index/fonts/::1757867971
