@@ -1,6 +1,7 @@
+Label
+AnimationPlayer
 AudioStreamPlayer
 AudioStreamPlayer3D
-Label
 ColorRect
 Control
 CollisionShape3D
@@ -11,5 +12,3 @@ Path3D
 MeshInstance3D
 Node3D
 VisibleOnScreenNotifier3D
-VisibleOnScreenEnabler3D
-CharacterBody3D

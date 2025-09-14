@@ -1,10 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://dl85n0kx8ec0e"]
+[gd_scene load_steps=15 format=3 uid="uid://dl85n0kx8ec0e"]
 
 [ext_resource type="Script" uid="uid://d2v1ajyhy3ufk" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bd1akdxmb7s71" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://ynhyosxbom5o" path="res://Mob.tscn" id="2_1bvp3"]
 [ext_resource type="FontFile" uid="uid://ntohkdowugey" path="res://fonts/Montserrat-Medium.ttf" id="4_lquwl"]
 [ext_resource type="Script" uid="uid://bi8yib2a8vwbc" path="res://ScoreLabel.gd" id="5_7mycd"]
+[ext_resource type="PackedScene" uid="uid://d0nnwnlrhf0aa" path="res://art/Big Tree.glb" id="6_272bh"]
+[ext_resource type="PackedScene" uid="uid://1iipkvb6124a" path="res://art/Floor Grass Sliced B.glb" id="7_5vw27"]
+[ext_resource type="PackedScene" uid="uid://dbmh31ioow2n1" path="res://art/Pine.glb" id="8_5vw27"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
 size = Vector3(60, 2, 60)
@@ -53,7 +56,7 @@ transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 10.1136, 3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.99124)
 
 [node name="Camera3D" type="Camera3D" parent="Marker3D"]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 1, 30, 47.6331)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 1, 20, 31.0451)
 fov = 45.0
 
 [node name="Cylinders" type="Node3D" parent="."]
@@ -132,6 +135,35 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "กด Enter เพื่อลองใหม่"
+
+[node name="Label" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 507.0
+offset_right = 330.0
+offset_bottom = 537.0
+text = "663380271-2 นายธนินท์รัฐ โลหะสาร"
+
+[node name="Big Tree" parent="." instance=ExtResource("6_272bh")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.41618, 0, 16.3034)
+
+[node name="Big Tree" parent="Big Tree" instance=ExtResource("6_272bh")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.32423, 0, -8.80975)
+
+[node name="Root Scene" parent="." instance=ExtResource("7_5vw27")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.185242, -0.216946, 0.126335)
+
+[node name="Root Scene2" parent="." instance=ExtResource("8_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8351, 0, 16.8794)
+
+[node name="Root Scene2" parent="Root Scene2" instance=ExtResource("8_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7211, 0, -14.9119)
+
+[node name="Root Scene3" parent="Root Scene2" instance=ExtResource("8_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.40099, 0, -14.9119)
+
+[node name="Root Scene3" parent="." instance=ExtResource("8_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.79667, 0, 16.9176)
 
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

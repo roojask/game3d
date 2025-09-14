@@ -4,12 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://db8207ona8pj8" path="res://art/player.glb" id="2_onrkg"]
 [ext_resource type="PackedScene" uid="uid://d2hboun3hoat5" path="res://art/Wizardus Maximus.glb" id="3_i3pqv"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_sh265"]
-radius = 0.8
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_i3pqv"]
+radius = 0.3
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_onrkg"]
-height = 0.5
-radius = 1.0
+[sub_resource type="BoxShape3D" id="BoxShape3D_hqtel"]
+size = Vector3(0.5, 2, 0.5)
 
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
@@ -22,10 +21,11 @@ script = ExtResource("1_4flbx")
 visible = false
 
 [node name="Root Scene" parent="Pivot" instance=ExtResource("3_i3pqv")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("SphereShape3D_sh265")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_i3pqv")
 
 [node name="MobDetector" type="Area3D" parent="."]
 collision_layer = 0
@@ -33,6 +33,7 @@ collision_mask = 2
 monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MobDetector"]
-shape = SubResource("CylinderShape3D_onrkg")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+shape = SubResource("BoxShape3D_hqtel")
 
 [connection signal="body_entered" from="MobDetector" to="." method="_on_mob_detector_body_entered"]
