@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://ynhyosxbom5o"]
+[gd_scene load_steps=5 format=3 uid="uid://ynhyosxbom5o"]
 
 [ext_resource type="Script" uid="uid://cq8i2euafc6ru" path="res://Mob.gd" id="1_r6b5h"]
 [ext_resource type="PackedScene" uid="uid://sh7yvu3igs4w" path="res://art/mob.glb" id="2_6frnq"]
+[ext_resource type="PackedScene" uid="uid://elwgsd4cok61" path="res://art/Dingus the cat.glb" id="3_6frnq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gguu4"]
-size = Vector3(1.5, 0.7, 2)
+size = Vector3(1, 0.9, 2)
 
 [node name="Mob" type="CharacterBody3D" groups=["mob"]]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 collision_layer = 2
 collision_mask = 0
 script = ExtResource("1_r6b5h")
@@ -14,9 +16,13 @@ script = ExtResource("1_r6b5h")
 [node name="Pivot" type="Node3D" parent="."]
 
 [node name="Character" parent="Pivot" instance=ExtResource("2_6frnq")]
+visible = false
+
+[node name="Root Scene" parent="Pivot" instance=ExtResource("3_6frnq")]
+transform = Transform3D(-0.4, 0, -3.49691e-08, 0, 0.4, 0, 3.49691e-08, 0, -0.4, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("BoxShape3D_gguu4")
 
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]

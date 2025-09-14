@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bd1akdxmb7s71"]
+[gd_scene load_steps=6 format=3 uid="uid://bd1akdxmb7s71"]
 
 [ext_resource type="Script" uid="uid://bbm2pqv44ar4p" path="res://Player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://db8207ona8pj8" path="res://art/player.glb" id="2_onrkg"]
+[ext_resource type="PackedScene" uid="uid://d2hboun3hoat5" path="res://art/Wizardus Maximus.glb" id="3_i3pqv"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_sh265"]
 radius = 0.8
@@ -11,12 +12,17 @@ height = 0.5
 radius = 1.0
 
 [node name="Player" type="CharacterBody3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 collision_mask = 6
 script = ExtResource("1_4flbx")
 
 [node name="Pivot" type="Node3D" parent="."]
 
 [node name="Character" parent="Pivot" instance=ExtResource("2_onrkg")]
+visible = false
+
+[node name="Root Scene" parent="Pivot" instance=ExtResource("3_i3pqv")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_sh265")
