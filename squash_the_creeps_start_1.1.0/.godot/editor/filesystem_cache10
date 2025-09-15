@@ -1,19 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757914259
+::res://::1757915869
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::-1::1757579877::0::1::::<><><>0<>0<><>::
 default_env.tres::Environment/Environment::-1::1757579877::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1757871781::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1757914978::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::5818898472691630559::1757579803::1757870402::1::::<><><>0<>0<>83eccf11f14f512408bcbe58b02999a7<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
-index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::5076474758084536757::1757871781::1757870749::1::::<><><>0<>0<>663ad0149ad847ed9856419aa856bf1c<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
-index.icon.png::CompressedTexture2D/CompressedTexture2D::4884539290475956414::1757871781::1757870749::1::::<><><>0<>0<>888d990c57f4b790e15b5db7ed611fe8<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
-index.png::CompressedTexture2D/CompressedTexture2D::5633355893289086843::1757871781::1757870402::1::::<><><>0<>0<>a856bc37eea64e1cbba71a248535eaeb<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
+index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::5076474758084536757::1757914977::1757870749::1::::<><><>0<>0<>663ad0149ad847ed9856419aa856bf1c<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D/CompressedTexture2D::4884539290475956414::1757914977::1757870749::1::::<><><>0<>0<>888d990c57f4b790e15b5db7ed611fe8<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D/CompressedTexture2D::5633355893289086843::1757914977::1757870402::1::::<><><>0<>0<>a856bc37eea64e1cbba71a248535eaeb<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
 main.gd::GDScript/GDScript::9099291914090062020::1757610397::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene/PackedScene::8001309851706461550::1757868365::0::1::::<><><>0<>0<><>::uid://d2v1ajyhy3ufk::::res://main.gd<>uid://bd1akdxmb7s71::::res://player.tscn<>uid://ynhyosxbom5o::::res://Mob.tscn<>uid://ntohkdowugey::::res://fonts/Montserrat-Medium.ttf<>uid://bi8yib2a8vwbc::::res://ScoreLabel.gd<>uid://d0nnwnlrhf0aa::::res://art/Big Tree.glb<>uid://1iipkvb6124a::::res://art/Floor Grass Sliced B.glb<>uid://dbmh31ioow2n1::::res://art/Pine.glb
+main.tscn::PackedScene::8001309851706461550::1757914990::0::1::::<><><>0<>0<><>::uid://d2v1ajyhy3ufk::::res://main.gd<>uid://bd1akdxmb7s71::::res://player.tscn<>uid://ynhyosxbom5o::::res://Mob.tscn<>uid://ntohkdowugey::::res://fonts/Montserrat-Medium.ttf<>uid://bi8yib2a8vwbc::::res://ScoreLabel.gd<>uid://d0nnwnlrhf0aa::::res://art/Big Tree.glb<>uid://1iipkvb6124a::::res://art/Floor Grass Sliced B.glb<>uid://dbmh31ioow2n1::::res://art/Pine.glb
 Mob.gd::GDScript/GDScript::5964521524852542386::1757609276::0::1::::<>CharacterBody3D<><>0<>0<><>::
-Mob.tscn::PackedScene/PackedScene::1711837800298934810::1757866975::0::1::::<><><>0<>0<><>::uid://cq8i2euafc6ru::::res://Mob.gd<>uid://sh7yvu3igs4w::::res://art/mob.glb<>uid://elwgsd4cok61::::res://art/Dingus the cat.glb
-music_player.tscn::PackedScene/PackedScene::693001148620765161::1757866975::0::1::::<><><>0<>0<><>::uid://ctawsefo06qm2::::res://art/House In a Forest Loop.ogg
+Mob.tscn::PackedScene::1711837800298934810::1757914990::0::1::::<><><>0<>0<><>::uid://cq8i2euafc6ru::::res://Mob.gd<>uid://sh7yvu3igs4w::::res://art/mob.glb<>uid://elwgsd4cok61::::res://art/Dingus the cat.glb
+music_player.tscn::PackedScene::693001148620765161::1757914990::0::1::::<><><>0<>0<><>::uid://ctawsefo06qm2::::res://art/House In a Forest Loop.ogg
 Player.gd::GDScript/GDScript::2483049080264015453::1757609276::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene/PackedScene::2650679087800194418::1757866974::0::1::::<><><>0<>0<><>::uid://bbm2pqv44ar4p::::res://Player.gd<>uid://db8207ona8pj8::::res://art/player.glb<>uid://d2hboun3hoat5::::res://art/Wizardus Maximus.glb
+player.tscn::PackedScene::2650679087800194418::1757914990::0::1::::<><><>0<>0<><>::uid://bbm2pqv44ar4p::::res://Player.gd<>uid://db8207ona8pj8::::res://art/player.glb<>uid://d2hboun3hoat5::::res://art/Wizardus Maximus.glb
 ScoreLabel.gd::GDScript/GDScript::3017527487136986356::1757609353::0::1::::<>Label<><>0<>0<><>::
 ::res://art/::1757865209
 Big Tree.glb::PackedScene/PackedScene::8941649361783144028::1757864629::1757864631::1::::<><><>0<>0<>66211b2794b38aaaa61c50b3654c9558<>res://.godot/imported/Big Tree.glb-61d88c6699a68a6ca3582c2da22bcd22.scn::
